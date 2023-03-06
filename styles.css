@@ -3,7 +3,15 @@
 
 /*body */
 body {
-    background-color: rgb(222, 185, 185);
+    background-color: rgb(212, 204, 195);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
 }
 
 
@@ -17,21 +25,37 @@ h1, h2  {
 }
 
 /*nav ul (see pg 145)*/
-nav {
-    color: rgb(225, 228, 35);
-}
+ .inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
 
-.text {
-    color: rgb(155, 91, 84);
-}
+ .inline li {
+    display: inline;
+  }
+ 
+  li a:hover {
+    background-color: #e37b7b;
+  }
+  
+  
+  .active {
+    background-color: #bdbbf0;
+  }
+ 
+ 
+  
+
+ 
 
 
-nav {
-    background-color: rgb(230, 163, 104);
+  nav {
+    background-color: rgb(165, 149, 135);
     border-style: solid;
-    border-color: rgb(114, 79, 76);
+    border-color: rgb(109, 101, 77);
     border-radius: 10px;
-    border-width: 2px;
+    border-width: 5px;
 }
 
 
@@ -41,6 +65,7 @@ nav {
 
 section  {
     color:  rgb(155, 91, 84);
+    
 }
 
 /*footer*/
@@ -48,5 +73,56 @@ footer {
     font-family: cursive;
 
 }
+footer {
+  clear: left;
+}
+footer > nav.verticalNavigation {
+  float: left;
+width: 22%; }
+footer > section#contactInfo {
+  float: left;
+width: 34%; }
+
+/*left column*/
+
+section#leftColumn {
+  clear: left;
+  float: left;
+  width: 33%; 
+}
 
 
+
+/*right column*/
+
+section#rightColumn {
+  float: left;
+  width: 65%; 
+  
+}
+
+
+
+section#theLeftColmn {
+  clear: left;
+  float: left;
+  width: 33%; 
+}
+section#theRightColmn {
+  float: left;
+  width: 65%; 
+  
+}
+
+
+section#aboutLeftColumn {
+  clear: left;
+  float: left;
+  width: 33%; 
+
+}
+
+section#aboutRightColumn {
+  float: left;
+  width: 66%; 
+}
